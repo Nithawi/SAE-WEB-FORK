@@ -127,8 +127,7 @@ main ol {
     min-height: 320px;
     padding: 20px;
     border-radius: 20px;
-    /* Raccourci background restauré */
-    background: var(--color-text-muted) url("/Images/Evenement/home-evenement.jpg") center / cover no-repeat;
+    background: var(--color-text-muted) url("/Images/Evenement/hero.jpg") center / cover no-repeat;
 }
 
 .hero__location {
