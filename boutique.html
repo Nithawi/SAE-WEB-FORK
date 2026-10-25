@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./boutique.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/boutique.css">
     <title>Booked | Boutique</title>
 </head>
 <body>
@@ -22,8 +22,8 @@
                 <li><a href="./contact.html" aria-current="page">Contact</a></li>
             </ul>
             <ul class="nav-bar__actions">
-                <li><a href="#"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                <li><a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
+                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
             </ul>
         </nav>
 
@@ -45,8 +45,8 @@
                         <li><a href="./contact.html" aria-current="page">Contact</a></li>
                     </ul>
                     <ul class="nav-bar__mobile-actions">
-                        <li><a href="#"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                        <li><a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i>Mon compte</a></li>
+                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
                     </ul>
                 </div>
             </details>
@@ -61,7 +61,7 @@
                 <h3 class="hero__gauche__sous-titre">Romans, essais, littérature jeunesse, BD & Mangas, art & culture et de la poésie pour rassasier votre curiosité</h3>
                 <ul class="hero__gauche__buttons">
                     <li><button class="hero__gauche__button--nouveaute" type="button"><a href="#explorer">Découvrir</a></button></li>
-                    <li><button class="hero__gauche__button--maps" type="button"><a href="https://www.google.com/maps?q=2+rue+Chaudrier,+17000+La+Rochelle&output=embed">Venir à la librairie</a></button></li>
+                    <li><button class="hero__gauche__button--maps" type="button"><a href="https://www.google.com/maps/place/2+Rue+Chaudrier,+17000+La+Rochelle/@46.1603233,-1.1558991,17z/data=!3m1!4b1!4m6!3m5!1s0x480153a5e277c4a3:0xf4e9aaf79010d8a3!8m2!3d46.1603196!4d-1.1533242!16s%2Fg%2F11c26v21qw?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D">Venir à la librairie</a></button></li>
                 </ul>
                 <ul class="hero__gauche__infos">
                     <li>
@@ -177,6 +177,15 @@
                     <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
                 </li>
                 <li class="collection__livre" data-category="roman nouveaute">
+                    <img class="collection__livre__couverture" src="/Images/Livres/zelda.jpg" alt="Couverture de Zelda">
+                    <p class="collection__livre__categorie">Roman</p>
+                    <span class="collection__livre__badge">Nouveau</span>
+                    <h3 class="collection__livre__titre">The Legende of Zelda :souvenirs d'enfance</h3>
+                    <p class="collection__livre__auteur">Matthieu Meriot</p>
+                    <p class="collection__livre__prix">20,90 €</p>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                </li>
+                <li class="collection__livre" data-category="roman nouveaute">
                     <img class="collection__livre__couverture" src="/Images/Livres/La-nuit-des-lucioles.jpg" alt="Couverture de La nuit des lucioles">
                     <p class="collection__livre__categorie">Roman</p>
                     <span class="collection__livre__badge">Nouveau</span>
@@ -194,31 +203,6 @@
                     <p class="collection__livre__prix">19,50 €</p>
                     <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
                 </li>
-                <li class="collection__livre" data-category="roman">
-                    <img class="collection__livre__couverture" src="/Images/Livres/Le-bleu-entre-nous.jpg" alt="Couverture de Le bleu entre nous">
-                    <p class="collection__livre__categorie">Roman</p>
-                    <h3 class="collection__livre__titre">Le bleu entre nous</h3>
-                    <p class="collection__livre__auteur">Inès Mori</p>
-                    <p class="collection__livre__prix">18,90 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
-                </li>
-                <li class="collection__livre" data-category="poesie nouveaute">
-                    <img class="collection__livre__couverture" src="/Images/Livres/Petite-meterologie.jpg" alt="Couverture de Petites météorologies">
-                    <p class="collection__livre__categorie">Poésie</p>
-                    <span class="collection__livre__badge">Nouveau</span>
-                    <h3 class="collection__livre__titre">Petites météorologies</h3>
-                    <p class="collection__livre__auteur">Émile Sorel</p>
-                    <p class="collection__livre__prix">16,00 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
-                </li>
-                <li class="collection__livre" data-category="culture">
-                    <img class="collection__livre__couverture" src="/Images/Livres/politique.jpg" alt="Couverture de La politique pour les nuls">
-                    <p class="collection__livre__categorie">Culture</p>
-                    <h3 class="collection__livre__titre">La politique pour les nuls</h3>
-                    <p class="collection__livre__auteur">Manue Macaron</p>
-                    <p class="collection__livre__prix">20,00 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
-                </li>
                 <li class="collection__livre" data-category="essai nouveaute">
                     <img class="collection__livre__couverture" src="/Images/Livres/le-goat.webp" alt="Couverture Journal d'un prisonnier">
                     <p class="collection__livre__categorie">Essai</p>
@@ -228,17 +212,7 @@
                     <p class="collection__livre__prix">20,90 €</p>
                     <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
                 </li>
-                <li class="collection__livre" data-category="roman nouveaute">
-                    <img class="collection__livre__couverture" src="/Images/Livres/zelda.jpg" alt="Couverture de Zelda">
-                    <p class="collection__livre__categorie">Roman</p>
-                    <span class="collection__livre__badge">Nouveau</span>
-                    <h3 class="collection__livre__titre">The Legende of Zelda :souvenirs d'enfance</h3>
-                    <p class="collection__livre__auteur">Matthieu Meriot</p>
-                    <p class="collection__livre__prix">20,90 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
-                </li>
             </ul>
-            <p id="galleryEmpty" class="collection__empty hidden">Aucun livre ne correspond à cette recherche pour le moment.</p>
             <button id="galleryMore" class="collection__voir-plus" type="button">Voir plus <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
         </section>
 
@@ -321,5 +295,4 @@
         </div>
     </footer>
 </body>
-<script src="./boutique.js"></script>
 </html>

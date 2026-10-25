@@ -25,6 +25,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--color-creme);
     margin: 0;
@@ -254,7 +258,7 @@ footer :is(p, h2) {
 }
 
 /* ==========================================================================
-   Media Queries (Mobile First : min-width)
+   Media Queries
    ========================================================================== */
 
 /* --- Tablette (>= 768px) : Logo & Footer Desktop --- */

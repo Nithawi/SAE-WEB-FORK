@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./evenement.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/evenement.css">
     <title>Booked | Événements</title>
 </head>
 <body>
@@ -22,8 +22,8 @@
                 <li><a href="./contact.html" aria-current="page">Contact</a></li>
             </ul>
             <ul class="nav-bar__actions">
-                <li><a href="#"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                <li><a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
+                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
             </ul>
         </nav>
 
@@ -45,33 +45,35 @@
                         <li><a href="./contact.html" aria-current="page">Contact</a></li>
                     </ul>
                     <ul class="nav-bar__mobile-actions">
-                        <li><a href="#"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                        <li><a href="#"><i class="fa-solid fa-user" aria-hidden="true"></i>Mon compte</a></li>
+                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
                     </ul>
                 </div>
             </details>
         </nav>
     </header>
+
     <main>
         <section class="hero">
             <div class="hero__gauche">
-                <h1 class="hero__gauche__titre">Des découvertes,<span> des histoires à partager</span></h1>
-                <h3 class="hero__gauche__sous-titre">
-                    Romans, essais, littérature jeunesse. Des livres choisis avec soin par nos libraires,
-                    à découvrir en ligne ou rue Chaudrier.
+                <p class="hero__accroche">Rencontres, ateliers et clubs de lecture</p>
+                <h1 class="hero__titre">Venez vivre<span>les histoires avec nous</span></h1>
+                <h3 class="hero__sous-titre">
+                    Auteurs, ateliers et clubs de lecture : retrouvez tous les rendez-vous de la librairie
+                    et réservez votre place en quelques clics.
                 </h3>
-                <ul class="hero__gauche__buttons">
-                    <li><button class="hero__gauche__button--nouveaute" type="button"><a href="./boutique.html">Découvrir la boutique</a></button></li>
-                    <li><button class="hero__gauche__button--maps" type="button"><a href="https://www.google.com/maps/place/2+Rue+Chaudrier,+17000+La+Rochelle">Venir à la librairie</a></button></li>
+                <ul class="hero__buttons">
+                    <li><button class="hero__button--nouveaute" type="button"><a href="#ce-mois-ci">Calendrier</a></button></li>
+                    <li><button type="button"><a href="#">Venir à la librairie</a></button></li>
                 </ul>
-                <ul class="hero__gauche__infos">
-                    </li>
-                        <span>8000+</span>
-                        <small>livres en stock</small>
+                <ul class="hero__infos">
+                    <li>
+                        <span>3</span>
+                        <small>rendez-vous à venir</small>
                     </li>
                     <li>
-                        <span>4,7/5</span>
-                        <small>par 328 lecteur</small>
+                        <span>Gratuit</span>
+                        <small>pour la plupart</small>
                     </li>
                     <li>
                         <span>Depuis 2008</span>
@@ -80,78 +82,113 @@
                 </ul>
             </div>
             <div class="hero__droite">
-                <p class="hero__droite__location"><i class="fa-solid fa-location-dot"></i> 2 rue Chaudrier - 17000 La Rochelle</p>
+                <p class="hero__location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> 2 rue Chaudrier - 17000 La Rochelle</p>
                 <div>
-                    <p class="hero__droite__nomSite">Booked</p>
-                    <p class="hero__droite__description">Une librairie à votre écoute au plus proche de vous</p>
+                    <p class="hero__nomSite">Booked</p>
+                    <p class="hero__description">La librairie est aussi un lieu de rencontres et de partage</p>
                 </div>
             </div>
         </section>
-        <section class="evenement__to_come">
-            <div class="evenement__to_come__event">
-                <img src="/Images/Evenement/12-novembre.png" alt="12 octobre">
-                <div class="evenement__to_come__event__text">
+
+        <section class="evenements-futurs">
+            <div class="carte-evenement">
+                <img src="/Images/Evenement/12-novembre.png" alt="12 novembre">
+                <div class="carte-evenement__texte">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab laboriosam neque quidem et quod amet facere saepe. 
-                        Esse animi atque repellat modi, unde iusto facilis explicabo est aperiam accusantium?
+                        Venez rencontrer l'auteur Titeuf pour une séance de dédicace et une discussion sur son dernier livre ainsi qu'une présentation de ses futurs projets. Et avec une surprise qui vous attend à la fin de l'événement !
                     </p>
                     <button type="button" class="button__inscription">S'inscrire</button>
                 </div>
             </div>
-            <div class="evenement__to_come__event">
+            <div class="carte-evenement">
                 <img src="/Images/Evenement/15-novembre.png" alt="15 novembre">
-                <div class="evenement__to_come__event__text">
+                <div class="carte-evenement__texte">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab laboriosam neque quidem et quod amet facere saepe. 
-                        Esse animi atque repellat modi, unde iusto facilis explicabo est aperiam accusantium?
+                        Venez nombreux au club de lecture de la librairie Booked ! Nous discuterons du livre "Le Petit Prince" d'Antoine de Saint-Exupéry. Rejoignez-nous pour partager vos impressions et échanger avec d'autres passionnés de lecture.
                     </p>
+                    <button type="button" class="button__inscription">S'inscrire</button>
                 </div>
             </div>
-            <div class="evenement__to_come__event">
+            <div class="carte-evenement">
                 <img src="/Images/Evenement/20-novembre.png" alt="20 novembre">
-                <div class="evenement__to_come__event__text">
+                <div class="carte-evenement__texte">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ab laboriosam neque quidem et quod amet facere saepe. 
-                        Esse animi atque repellat modi, unde iusto facilis explicabo est aperiam accusantium?
+                        Participez à notre atelier d'illustration pour les enfants de 7 à 10 ans ! Les participants apprendront les bases de l'illustration et auront l'occasion de créer leur propre illustration. Les places sont limitées, alors inscrivez-vous dès maintenant !
                     </p>
+                    <button type="button" class="button__inscription">S'inscrire</button>
                 </div>
             </div>
         </section>
-        <section class="evenement__this_month">
-            <ul>
-                <li><a href="#"><img src="#" alt="1 nov"></a></li>
-                <li><a href="#"><img src="#" alt="2 nov"></a></li>
-                <li><a href="#"><img src="#" alt="3 nov"></a></li>
-                <li><a href="#"><img src="#" alt="4 nov"></a></li>
-                <li><a href="#"><img src="#" alt="5 nov"></a></li>
-                <li><a href="#"><img src="#" alt="6 nov"></a></li>
-                <li><a href="#"><img src="#" alt="7 nov"></a></li>
-                <li><a href="#"><img src="#" alt="8 nov"></a></li>
-                <li><a href="#"><img src="#" alt="9 nov"></a></li>
-                <li><a href="#"><img src="#" alt="10 nov"></a></li>
-                <li><a href="#"><img src="#" alt="11 nov"></a></li>
-                <li><a href="#"><img src="#" alt="12 nov"></a></li>
-                <li><a href="#"><img src="#" alt="13 nov"></a></li>
-                <li><a href="#"><img src="#" alt="14 nov"></a></li>
-                <li><a href="#"><img src="#" alt="15 nov"></a></li>
-                <li><a href="#"><img src="#" alt="16 nov"></a></li>
-                <li><a href="#"><img src="#" alt="17 nov"></a></li>
-                <li><a href="#"><img src="#" alt="18 nov"></a></li>
-                <li><a href="#"><img src="#" alt="19 nov"></a></li>
-                <li><a href="#"><img src="#" alt="20 nov"></a></li>
-                <li><a href="#"><img src="#" alt="21 nov"></a></li>
-                <li><a href="#"><img src="#" alt="22 nov"></a></li>
-                <li><a href="#"><img src="#" alt="23 nov"></a></li>
-                <li><a href="#"><img src="#" alt="24 nov"></a></li>
-                <li><a href="#"><img src="#" alt="25 nov"></a></li>
-                <li><a href="#"><img src="#" alt="26 nov"></a></li>
-                <li><a href="#"><img src="#" alt="27 nov"></a></li>
-                <li><a href="#"><img src="#" alt="28 nov"></a></li>
-                <li><a href="#"><img src="#" alt="29 nov"></a></li>
-                <li><a href="#"><img src="#" alt="30 nov"></a></li>
-            </ul>                                     
+
+        <section class="evenement__this_month" id="ce-mois-ci">
+            <h2 class="evenement__titre">Ce mois-ci</h2>
+            <div class="calendrier">
+                <div class="calendrier__entete">
+                    <button class="calendrier__nav" type="button" aria-label="Mois précédent">
+                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                    </button>
+                    <!-- Le mois est écrit en dur -->
+                    <p class="calendrier__mois">Novembre 2026</p>
+                    <button class="calendrier__nav" type="button" aria-label="Mois suivant">
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <ul class="calendrier__semaine" aria-hidden="true">
+                    <li>Lun</li><li>Mar</li><li>Mer</li><li>Jeu</li><li>Ven</li><li>Sam</li><li>Dim</li>
+                </ul>
+                
+                <!-- Jours codés en dur avec les événements -->
+                <ol class="calendrier__jours">
+                    <li></li><li></li><li></li><li></li><li></li><li></li>
+                    <li><button type="button" class="calendrier__jour">1</button></li>
+                    <li><button type="button" class="calendrier__jour">2</button></li>
+                    <li><button type="button" class="calendrier__jour">3</button></li>
+                    <li><button type="button" class="calendrier__jour">4</button></li>
+                    <li><button type="button" class="calendrier__jour">5</button></li>
+                    <li><button type="button" class="calendrier__jour">6</button></li>
+                    <li><button type="button" class="calendrier__jour">7</button></li>
+                    <li><button type="button" class="calendrier__jour">8</button></li>
+                    <li><button type="button" class="calendrier__jour">9</button></li>
+                    <li><button type="button" class="calendrier__jour">10</button></li>
+                    <li><button type="button" class="calendrier__jour">11</button></li>
+                    <!-- Jour avec événement ET sélectionné -->
+                    <li><button type="button" class="calendrier__jour calendrier__jour--evenement calendrier__jour--selectionne">12</button></li>
+                    <li><button type="button" class="calendrier__jour">13</button></li>
+                    <li><button type="button" class="calendrier__jour">14</button></li>
+                    <!-- Jour avec événement -->
+                    <li><button type="button" class="calendrier__jour calendrier__jour--evenement">15</button></li>
+                    <li><button type="button" class="calendrier__jour">16</button></li>
+                    <li><button type="button" class="calendrier__jour">17</button></li>
+                    <li><button type="button" class="calendrier__jour">18</button></li>
+                    <li><button type="button" class="calendrier__jour">19</button></li>
+                    <!-- Jour avec événement -->
+                    <li><button type="button" class="calendrier__jour calendrier__jour--evenement">20</button></li>
+                    <li><button type="button" class="calendrier__jour">21</button></li>
+                    <li><button type="button" class="calendrier__jour">22</button></li>
+                    <li><button type="button" class="calendrier__jour">23</button></li>
+                    <li><button type="button" class="calendrier__jour">24</button></li>
+                    <li><button type="button" class="calendrier__jour">25</button></li>
+                    <li><button type="button" class="calendrier__jour">26</button></li>
+                    <li><button type="button" class="calendrier__jour">27</button></li>
+                    <li><button type="button" class="calendrier__jour">28</button></li>
+                    <li><button type="button" class="calendrier__jour">29</button></li>
+                    <li><button type="button" class="calendrier__jour">30</button></li>
+                </ol>
+            </div>
+
+            <!-- Détail de l'événement écrit en dur -->
+            <div class="calendrier__detail">
+                <h3 class="calendrier__detail-titre">12 Novembre</h3>
+                <ul class="calendrier__liste">
+                    <li class="calendrier__evenement">
+                        <span class="calendrier__heure">19h00</span>
+                        <strong>Rencontre avec un auteur</strong>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
+
     <footer>
         <div class="footer__contenu">
             <section class="footer__marque">

@@ -1,39 +1,514 @@
+/* ==========================================================================
+   Page Événements (Mobile First)
+   ========================================================================== */
+main {
+    background: var(--color-creme);
+    font-family: var(--font-sans);
+}
 
-h1{
+main h1, main h2, main h3, main p, main ul, main ol {
+    margin: 0;
+    padding: 0;
+}
+
+main ol {
+    list-style: none;
+}
+
+/* --- Titres de section --- */
+.evenement__titre {
+    margin-bottom: 24px;
+    font: 400 1.8rem/1.15 var(--font-serif);
+    text-align: center;
+}
+
+/* ==========================================================================
+   Section Hero
+   ========================================================================== */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.hero__gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero__accroche {
+    color: var(--color-orange);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.hero__titre {
+    font: 400 2.2rem/1.1 var(--font-serif);
+}
+
+.hero__titre span {
+    display: block;
+    color: var(--color-orange);
+}
+
+.hero__sous-titre {
+    color: var(--color-text-muted);
+    font: 400 1rem/1.5 var(--font-sans);
+}
+
+.hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+    list-style: none;
+}
+
+.hero__buttons button {
+    padding: 12px 24px;
+    border: 1px solid var(--color-texte);
+    border-radius: 999px;
+    background: transparent;
+    font: 700 0.85rem var(--font-sans);
+    cursor: pointer;
+    transition: all 0.2s ease; 
+}
+
+.hero__buttons button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hero__buttons button:hover {
+    transform: translateY(-2px);
+    opacity: 0.85; 
+}
+
+.hero__button--nouveaute {
+    border-color: var(--color-orange) !important;
+    background: var(--color-orange) !important;
+    color: var(--color-white) !important;
+}
+
+.hero__infos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 16px;
+    list-style: none;
+}
+
+.hero__infos li {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__infos span {
+    font: 700 1.5rem var(--font-serif);
+}
+
+.hero__infos small {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+.hero__droite {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    /* Raccourci background restauré */
+    background: var(--color-text-muted) url("/Images/Evenement/home-evenement.jpg") center / cover no-repeat;
+}
+
+.hero__location {
+    align-self: flex-start;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: var(--color-white);
+    color: var(--color-texte);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.hero__droite > div {
+    max-width: 250px;
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--color-white);
+    color: var(--color-texte);
+}
+
+.hero__nomSite {
+    margin-bottom: 4px;
+    color: var(--color-orange);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero__description {
+    font: 1.1rem/1.3 var(--font-serif);
+}
+
+/* ==========================================================================
+   Section Événements à venir
+   ========================================================================== */
+.evenements-futurs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 32px 16px;
+    border-top: 1px solid var(--color-border);
+}
+
+.carte-evenement {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.carte-evenement img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+}
+
+.carte-evenement__texte {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--color-rose);
+}
+
+.carte-evenement__texte p {
+    font: 0.95rem/1.5 var(--font-serif);
+}
+
+.carte-evenement:nth-child(2) .carte-evenement__texte {
+    background: var(--color-vert);
+}
+
+.carte-evenement:nth-child(3) .carte-evenement__texte {
+    background: var(--color-jaune);
+}
+
+.button__inscription {
+    align-self: flex-start;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px;
+    background: var(--color-orange);
+    color: var(--color-white);
+    font: 700 0.85rem var(--font-sans);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button__inscription:hover {
+    transform: translateY(-2px);
+    opacity: 0.85; 
+}
+
+/* ==========================================================================
+   Section Ce mois-ci (calendrier)
+   ========================================================================== */
+.evenement__this_month {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 32px 16px 48px;
+    border-top: 1px solid var(--color-border);
+}
+
+.calendrier {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    background: var(--color-white);
+}
+
+.calendrier__entete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.calendrier__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-texte);
+    border-radius: 50%;
+    background: var(--color-white);
+    color: var(--color-texte);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calendrier__nav:hover {
+    border-color: var(--color-orange);
+    background: var(--color-orange);
+    color: var(--color-white);
+}
+
+.calendrier__mois {
+    margin: 0 auto;
+    font: 400 1.3rem var(--font-serif);
+    text-transform: capitalize;
+}
+
+.calendrier__semaine {
+    display: flex;
+    gap: 4px;
+    margin: 0 0 6px 0;
+    padding: 0;
+    list-style: none;
+    color: var(--color-text-muted);
+    font: 700 0.65rem var(--font-sans);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.calendrier__semaine li {
+    flex: 1;
+}
+
+.calendrier__jours {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.calendrier__jour {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--color-texte);
+    font: 400 0.85rem var(--font-sans);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.calendrier__jour:hover {
+    background: var(--color-orange);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+.calendrier__jour--evenement {
+    background: var(--color-jaune);
+    font-weight: 700;
+}
+
+.calendrier__jour--evenement::after {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-orange);
+    content: "";
+    transform: translateX(-50%);
+}
+
+.calendrier__jour--selectionne {
+    background: var(--color-orange);
+    color: var(--color-white);
+}
+
+.calendrier__jour--selectionne::after {
+    background: var(--color-white);
+}
+
+.calendrier__detail {
+    width: 100%;
+    max-width: 720px;
+    margin: 20px auto 0;
+}
+
+.calendrier__detail-titre {
+    margin-bottom: 12px;
+    font: 400 1.2rem var(--font-serif);
+    text-transform: capitalize;
+}
+
+.calendrier__liste {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.calendrier__evenement {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: var(--color-rose);
     font-family: var(--font-serif);
-    font-size:175%;
 }
 
-span{
-    color:var(--color-orange)
+.calendrier__heure {
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--color-white);
+    font: 700 0.75rem var(--font-sans);
 }
 
-.hero{
-    margin: 0.5rem; /* Marge extérieure */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* --- Tablette (>= 768px) --- */
+@media (min-width: 768px) {
+    .evenement__titre {
+        font-size: 2.2rem;
+    }
+
+    .evenements-futurs {
+        gap: 28px;
+        padding: 48px 22px;
+    }
+
+    .carte-evenement {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .carte-evenement:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .carte-evenement:nth-child(even) .carte-evenement__texte {
+        flex-direction: row-reverse;
+    }
+
+    .carte-evenement img {
+        flex: none;
+        align-self: center;
+        width: 140px;
+        height: 140px;
+    }
+
+    .carte-evenement__texte {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 24px 28px;
+    }
+
+    .carte-evenement__texte p {
+        font-size: 1rem;
+    }
+
+    .button__inscription {
+        flex: none;
+        align-self: center;
+    }
+
+    .evenement__this_month {
+        padding: 48px 22px 64px;
+    }
+
+    .calendrier {
+        padding: 28px;
+    }
+
+    .calendrier__semaine,
+    .calendrier__jours {
+        gap: 8px;
+    }
+
+    .calendrier__semaine {
+        font-size: 0.75rem;
+    }
+
+    .calendrier__jour {
+        font-size: 1rem;
+    }
 }
 
-.hero__gauche{
-    padding:1rem; /* Marge intérieure */
-    background-color: var(--color-jaune);
-    border-radius: 10px; /* Applique un effet d'arrondit */
-}
+/* --- Grand Desktop (>= 1100px) --- */
+@media (min-width: 1100px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+        padding: 40px var(--space-page);
+    }
 
-.hero__gauche__buttons{
-    display:flex;
-    gap:1em;    /* Ecart */
-    flex-direction: row; /* Blocs en ligne*/
-    flex-wrap: wrap; /* Retour à la ligne si plus de place */
-    justify-content: center; /* Garde les boutons au centre du bloc */
-}
+    .hero__gauche,
+    .hero__droite {
+        flex: 1;
+    }
 
-.hero__gauche__buttons li button{
-    padding-left:1rem;
-    padding-right:1rem;
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-    flex-basis:75%; /*taille minimum*/
-    flex-grow:1;
-    background-color: var(--color-rose); /*Couleur du bouton*/
-    border-radius:30px;
-    border-color:var(--color-texte);
+    .hero__titre {
+        font-size: 3.5rem;
+    }
+
+    .hero__sous-titre {
+        max-width: 80%;
+        font-size: 1.15rem;
+    }
+
+    .hero__droite {
+        min-height: 480px;
+        padding: 40px;
+    }
+
+    .evenement__titre {
+        font-size: 2.65rem;
+    }
+
+    .evenements-futurs,
+    .evenement__this_month {
+        padding-left: var(--space-page);
+        padding-right: var(--space-page);
+    }
+
+    .carte-evenement img {
+        width: 180px;
+        height: 180px;
+    }
 }
