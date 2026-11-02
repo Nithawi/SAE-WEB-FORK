@@ -2,18 +2,20 @@
    Variables & base (global) - Mobile First
    ========================================================================== */
 :root {
-    --color-creme: #fff9ed;
+    --color-creme: #f9f0de;
     --color-white: #fdfbf6;
     --color-texte: #2b211b;
     --color-border: #e9dfcf;
     --color-text-muted: #82776e;
     --color-rose: #f5c4d2;
     --color-vert: #b9e6d0;
+    --color-vertf: #256B3E;
     --color-jaune: #ffda68;
     --color-orange: #ff5948;
     --color-bleu: #4a90e2;
     --color-lavande: #c8b6e2;
     --color-violet: #9b59b6;
+    --color-bordeaux: #800000;
 
     --font-serif: Georgia, "Times New Roman", serif;
     --font-sans: Arial, sans-serif;

@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./contact.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <link rel="icon" href="/Images/Autre/logo.png"/>
     <title>Booked | Contact</title>
 </head>
 <body>
     <header>
-        <nav class="nav-bar nav-bar--desktop" aria-label="Navigation principale">
+        <nav class="nav-bar nav-bar--desktop">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="Logo de Booked">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
                 <span>Booked</span>
             </a>
             <ul class="nav-bar__pages">
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="./boutique.html">Boutique</a></li>
                 <li><a href="./evenement.html">Événements</a></li>
-                <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
             <ul class="nav-bar__actions">
-                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
+                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
             </ul>
         </nav>
 
-        <nav class="nav-bar nav-bar--mobile" aria-label="Navigation mobile">
+        <nav class="nav-bar nav-bar--mobile">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="Logo de Booked">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
                 <span>Booked</span>
             </a>
             <details class="nav-bar__menu">
                 <summary>
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-bars"></i>
                     <span class="visually-hidden">Menu de navigation</span>
                 </summary>
                 <div class="nav-bar__dropdown">
@@ -42,11 +43,11 @@
                         <li><a href="./index.html">Accueil</a></li>
                         <li><a href="./boutique.html">Boutique</a></li>
                         <li><a href="./evenement.html">Événements</a></li>
-                        <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                     <ul class="nav-bar__mobile-actions">
-                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
+                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                        <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
                     </ul>
                 </div>
             </details>
@@ -56,22 +57,22 @@
     <main>
         <div class="contact">
             <div class="contact__infos">
-                <section class="contact__reseaux" aria-labelledby="reseaux-titre">
-                    <h1 id="reseaux-titre">Où nous retrouver ?</h1>
+                <section class="contact__reseaux">
+                    <h1>Où nous retrouver ?</h1>
                     <h2>Sur nos réseaux :</h2>
                     <ul>
-                        <li><a class="reseau reseau--instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Instagram</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
-                        <li><a class="reseau reseau--facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
-                        <li><a class="reseau reseau--tiktok" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok" aria-hidden="true"></i><span>TikTok</span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></li>
+                        <li><a class="reseau reseau--instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i><span>Instagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a class="reseau reseau--facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a class="reseau reseau--tiktok" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i><span>TikTok</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                     </ul>
                 </section>
 
-                <section class="contact__boutique" aria-labelledby="boutique-titre">
-                    <h2 id="boutique-titre">En boutique et téléphone :</h2>
+                <section class="contact__boutique">
+                    <h2>En boutique et téléphone :</h2>
                     <div class="contact__coordonnees">
                         <iframe class="contact__carte"
                             src="https://www.google.com/maps?q=2+rue+Chaudrier,+17000+La+Rochelle&output=embed"
-                            title="Carte Google Maps de la librairie au 2 rue Chaudrier, 17000 La Rochelle"
+                            title="Carte Google Maps de la librairie"
                             loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
                         <dl>
                             <div>
@@ -89,29 +90,29 @@
                 </section>
             </div>
 
-            <section class="contact__demande" aria-labelledby="demande-titre">
-                <h2 id="demande-titre">Une demande spécifique ?</h2>
+            <section class="contact__demande">
+                <h2>Une demande spécifique ?</h2>
                 <p class="contact__intro">Remplissez ce formulaire :</p>
 
                 <form action="#" method="post">
                     <div class="form__identite">
                         <div class="champ">
-                            <label for="prenom">Prénom <span aria-hidden="true">*</span></label>
+                            <label for="prenom">Prénom <span>*</span></label>
                             <input id="prenom" name="prenom" type="text" autocomplete="given-name" placeholder="Votre prénom" required>
                         </div>
                         <div class="champ">
-                            <label for="nom">Nom <span aria-hidden="true">*</span></label>
+                            <label for="nom">Nom <span>*</span></label>
                             <input id="nom" name="nom" type="text" autocomplete="family-name" placeholder="Votre nom" required>
                         </div>
                     </div>
 
                     <div class="champ">
-                        <label for="email">Adresse e-mail <span aria-hidden="true">*</span></label>
+                        <label for="email">Adresse e-mail <span>*</span></label>
                         <input id="email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required>
                     </div>
 
                     <div class="champ">
-                        <label for="sujet">Objet de votre demande <span aria-hidden="true">*</span></label>
+                        <label for="sujet">Objet de votre demande <span>*</span></label>
                         <select id="sujet" name="sujet" required>
                             <option value="" selected disabled>Sélectionnez un sujet</option>
                             <option value="livre">Une question sur un livre</option>
@@ -123,7 +124,7 @@
                     </div>
 
                     <div class="champ">
-                        <label for="message">Votre message <span aria-hidden="true">*</span></label>
+                        <label for="message">Votre message <span>*</span></label>
                         <textarea id="message" name="message" rows="4" placeholder="Dites-nous comment nous pouvons vous aider..." required></textarea>
                     </div>
 
@@ -133,9 +134,9 @@
                     </div>
 
                     <button class="form__envoyer" type="submit">
-                        Envoyer mon message <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        Envoyer mon message <i class="fa-solid fa-arrow-right"></i>
                     </button>
-                    <p class="form__mention"><span aria-hidden="true">*</span> Champs obligatoires</p>
+                    <p class="form__mention"><span>*</span> Champs obligatoires</p>
                 </form>
             </section>
         </div>
@@ -153,14 +154,14 @@
                 <p>Lun-Sam 10h-19h Dim 11h-18h</p>
                 
                 <ul class="footer__reseaux">
-                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
                 </ul>
             </section>
 
-            <nav class="footer__colonne footer__acces-rapides" aria-labelledby="f-rapide">
-                <h2 id="f-rapide">Accès rapides</h2>
+                <nav class="footer__colonne footer__acces-rapides">
+                <h2>Accès rapides</h2>
                 <ul>
                     <li><a href="./index.html">Accueil</a></li>
                     <li><a href="./boutique.html">Boutique</a></li>
@@ -169,27 +170,27 @@
                 </ul>
             </nav>
 
-            <nav class="footer__colonne" aria-labelledby="f-booked">
-                <h2 id="f-booked">Booked</h2>
+            <nav class="footer__colonne">
+                <h2>Booked</h2>
                 <ul>
                     <li><a href="#">Événements</a></li>
                     <li><a href="#">Notre équipe</a></li>
-                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="./contact.html">Nous contacter</a></li>
                 </ul>
             </nav>
 
-            <nav class="footer__colonne" aria-labelledby="f-aide">
-                <h2 id="f-aide">Besoin d'aide</h2>
+            <nav class="footer__colonne">
+                <h2>Besoin d'aide</h2>
                 <ul>
-                    <li><a href="#">Commande(s)</a></li>
-                    <li><a href="#">Retours</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="./contact.html">Commande(s)</a></li>
+                    <li><a href="./contact.html">Retours</a></li>
+                    <li><a href="./contact.html">FAQ</a></li>
                 </ul>
             </nav>
 
             <div class="footer__bas">
                 <p><a href="#">Mentions légales</a> <a href="#">Confidentialité</a> <a href="#">CGV</a></p>
-                <p class="footer__paiements" aria-label="Moyens de paiement acceptés"><span>VISA</span><span>MC</span><span>PayPal</span></p>
+                <p class="footer__paiements"><span>VISA</span><span>MC</span><span>PayPal</span></p>
             </div>
         </div>
     </footer>

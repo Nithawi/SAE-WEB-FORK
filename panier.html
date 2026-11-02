@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./panier.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/panier.css">
+    <link rel="icon" href="/Images/Autre/logo.png"/>
     <title>Booked | Mon Panier</title>
 </head>
 <body>
     <header>
-        <nav class="nav-bar nav-bar--desktop" aria-label="Navigation principale">
+        <nav class="nav-bar nav-bar--desktop">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="Logo de Booked">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
                 <span>Booked</span>
             </a>
             <ul class="nav-bar__pages">
@@ -22,19 +23,19 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
             <ul class="nav-bar__actions">
-                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
+                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
             </ul>
         </nav>
 
-        <nav class="nav-bar nav-bar--mobile" aria-label="Navigation mobile">
+        <nav class="nav-bar nav-bar--mobile">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="Logo de Booked">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
                 <span>Booked</span>
             </a>
             <details class="nav-bar__menu">
                 <summary>
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-bars"></i>
                     <span class="visually-hidden">Menu de navigation</span>
                 </summary>
                 <div class="nav-bar__dropdown">
@@ -45,8 +46,8 @@
                         <li><a href="./contact.html">Contact</a></li>
                     </ul>
                     <ul class="nav-bar__mobile-actions">
-                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                        <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Mon compte</a></li>
+                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                        <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
                     </ul>
                 </div>
             </details>
@@ -59,10 +60,8 @@
 
             <div class="panier__contenu">
                 
-                <!-- Liste des articles -->
                 <div class="panier__articles">
                     <ul class="panier__liste">
-                        <!-- Article 1 -->
                         <li class="carte-article">
                             <img class="carte-article__image" src="/Images/Livres/la-tresse.jpg" alt="Couverture de La tresse">
                             <div class="carte-article__infos">
@@ -72,17 +71,16 @@
                             </div>
                             <div class="carte-article__actions">
                                 <div class="carte-article__quantite">
-                                    <button type="button" aria-label="Diminuer la quantité">-</button>
+                                    <button type="button">-</button>
                                     <span>1</span>
-                                    <button type="button" aria-label="Augmenter la quantité">+</button>
+                                    <button type="button">+</button>
                                 </div>
                                 <button class="carte-article__supprimer" type="button">
-                                    <i class="fa-solid fa-trash-can" aria-hidden="true"></i> Supprimer
+                                    <i class="fa-solid fa-trash-can"></i> Supprimer
                                 </button>
                             </div>
                         </li>
 
-                        <!-- Article 2 -->
                         <li class="carte-article">
                             <img class="carte-article__image" src="/Images/Livres/pays-des-autres.jpg" alt="Couverture de Pays des autres">
                             <div class="carte-article__infos">
@@ -92,19 +90,18 @@
                             </div>
                             <div class="carte-article__actions">
                                 <div class="carte-article__quantite">
-                                    <button type="button" aria-label="Diminuer la quantité">-</button>
+                                    <button type="button">-</button>
                                     <span>2</span>
-                                    <button type="button" aria-label="Augmenter la quantité">+</button>
+                                    <button type="button">+</button>
                                 </div>
                                 <button class="carte-article__supprimer" type="button">
-                                    <i class="fa-solid fa-trash-can" aria-hidden="true"></i> Supprimer
+                                    <i class="fa-solid fa-trash-can"></i> Supprimer
                                 </button>
                             </div>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Résumé de la commande -->
                 <aside class="resume-commande">
                     <h2 class="resume-commande__titre">Récapitulatif</h2>
                     
@@ -144,14 +141,14 @@
                 <p>Lun-Sam 10h-19h Dim 11h-18h</p>
                 
                 <ul class="footer__reseaux">
-                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
                 </ul>
             </section>
 
-            <nav class="footer__colonne footer__acces-rapides" aria-labelledby="f-rapide">
-                <h2 id="f-rapide">Accès rapides</h2>
+            <nav class="footer__colonne footer__acces-rapides">
+                <h2>Accès rapides</h2>
                 <ul>
                     <li><a href="./index.html">Accueil</a></li>
                     <li><a href="./boutique.html">Boutique</a></li>
@@ -160,8 +157,8 @@
                 </ul>
             </nav>
 
-            <nav class="footer__colonne" aria-labelledby="f-booked">
-                <h2 id="f-booked">Booked</h2>
+            <nav class="footer__colonne">
+                <h2>Booked</h2>
                 <ul>
                     <li><a href="#">Événements</a></li>
                     <li><a href="#">Notre équipe</a></li>
@@ -169,8 +166,8 @@
                 </ul>
             </nav>
 
-            <nav class="footer__colonne" aria-labelledby="f-aide">
-                <h2 id="f-aide">Besoin d'aide</h2>
+            <nav class="footer__colonne">
+                <h2>Besoin d'aide</h2>
                 <ul>
                     <li><a href="#">Commande(s)</a></li>
                     <li><a href="#">Retours</a></li>
@@ -180,7 +177,7 @@
 
             <div class="footer__bas">
                 <p><a href="#">Mentions légales</a> <a href="#">Confidentialité</a> <a href="#">CGV</a></p>
-                <p class="footer__paiements" aria-label="Moyens de paiement acceptés"><span>VISA</span><span>MC</span><span>PayPal</span></p>
+                <p class="footer__paiements"><span>VISA</span><span>MC</span><span>PayPal</span></p>
             </div>
         </div>
     </footer>

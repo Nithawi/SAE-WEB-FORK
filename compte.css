@@ -1,0 +1,260 @@
+/* ==========================================================================
+   Page Compte (Mobile First)
+   ========================================================================== */
+main {
+    background-color: var(--color-creme);
+    font-family: var(--font-sans);
+}
+
+main :is(h1, h2, h3, p, ul){
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Structure Principale --- */
+.compte {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 16px 80px;
+}
+
+.compte__titre {
+    margin-bottom: 45px;
+    font-size: 2.5rem;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    text-align: center !important;
+}
+
+.compte__contenu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.compte__section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.compte__sous-titre {
+    font-size: 1.5rem;
+    font-family: var(--font-serif);
+    font-weight: 400;
+}
+
+.compte__colonne-droite {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ==========================================================================
+   Bloc Informations Personnelles
+   ========================================================================== */
+.carte-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+}
+
+.carte-info__ligne {
+    font-size: 0.95rem;
+    color: var(--color-texte);
+}
+
+.carte-info__ligne span {
+    color: var(--color-text-muted);
+    font-weight: bold;
+}
+
+.carte-info__bouton {
+    align-self: flex-start;
+    padding: 10px 20px;
+    border: 1px solid var(--color-texte);
+    border-radius: 999px;
+    background-color: transparent;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carte-info__bouton:hover {
+    background-color: var(--color-texte);
+    color: var(--color-white);
+}
+
+/* ==========================================================================
+   Bloc Historique des Commandes
+   ========================================================================== */
+.compte__commandes-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.carte-commande {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+}
+
+.carte-commande__entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.carte-commande__numero {
+    font-weight: 700;
+    font-family: var(--font-serif);
+}
+
+.carte-commande__date {
+    color: var(--color-text-muted);
+}
+
+.carte-commande__details {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.carte-commande__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    padding-top: 12px;
+    border-top: 1px solid var(--color-border);
+}
+
+.carte-commande__statut {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background-color: var(--color-vert);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.carte-commande__statut--domicile {
+    background-color: var(--color-rose);
+}
+
+.carte-commande__statut--boutique {
+    background-color: var(--color-vert);
+}
+
+.carte-commande__prix {
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: var(--font-serif);
+}
+
+/* ==========================================================================
+   Bloc Liste d'envies (Wishlist)
+   ========================================================================== */
+.compte__envies-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.carte-envie {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+}
+
+.carte-envie img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carte-envie__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.carte-envie__titre {
+    font-size: 1.05rem;
+    font-family: var(--font-serif);
+    font-weight: 400;
+}
+
+.carte-envie__auteur {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.carte-envie__prix {
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.carte-envie__ajouter {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carte-envie__ajouter:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Media Queries (Mobile First)
+   ========================================================================== */
+
+/* --- À partir de 450px --- */
+@media (min-width: 450px) {
+    .compte__titre {
+        text-align: left;
+    }
+}
+
+/* --- Grand Desktop (>= 992px) : Disposition en 2 colonnes --- */
+@media (min-width: 992px) {
+    .compte {
+        padding-left: var(--space-page);
+        padding-right: var(--space-page);
+    }
+
+    .compte__contenu {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr; /* Les infos à gauche, commandes + envies à droite */
+        gap: 40px;
+        align-items: flex-start;
+    }
+}

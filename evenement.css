@@ -6,7 +6,7 @@ main {
     font-family: var(--font-sans);
 }
 
-main h1, main h2, main h3, main p, main ul, main ol {
+main :is(h1,h2,h3,p, ul, ol) {
     margin: 0;
     padding: 0;
 }
@@ -14,6 +14,11 @@ main h1, main h2, main h3, main p, main ul, main ol {
 main ol {
     list-style: none;
 }
+
+main section {
+    border-radius: 10px;
+}
+
 
 /* --- Titres de section --- */
 .evenement__titre {
@@ -75,7 +80,7 @@ main ol {
     padding: 12px 24px;
     border: 1px solid var(--color-texte);
     border-radius: 999px;
-    background: transparent;
+    background: var(--color-white);
     font: 700 0.85rem var(--font-sans);
     cursor: pointer;
     transition: all 0.2s ease; 
@@ -127,7 +132,7 @@ main ol {
     min-height: 320px;
     padding: 20px;
     border-radius: 20px;
-    background: url("/Images/Evenement/hero.jpg") center / cover no-repeat;
+    background: url("/Images/Evenement/hero.jpg") center/cover no-repeat;
 }
 
 .hero__location {
@@ -140,7 +145,7 @@ main ol {
     font-weight: 700;
 }
 
-.hero__droite > div {
+.hero__droite div {
     max-width: 250px;
     padding: 16px;
     border-radius: 12px;
@@ -171,7 +176,7 @@ main ol {
     max-width: 1440px;
     margin: 0 auto;
     padding: 32px 16px;
-    border-top: 1px solid var(--color-border);
+    background: var(--color-white);
 }
 
 .carte-evenement {
@@ -236,7 +241,6 @@ main ol {
     max-width: 1440px;
     margin: 0 auto;
     padding: 32px 16px 48px;
-    border-top: 1px solid var(--color-border);
 }
 
 .calendrier {

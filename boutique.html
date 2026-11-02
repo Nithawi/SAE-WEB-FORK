@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./boutique.css">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/boutique.css">
+    <link rel="icon" href="/Images/Autre/logo.png"/>
     <title>Booked | Boutique</title>
 </head>
 <body>
     <header>
-        <nav class="nav-bar nav-bar--desktop" aria-label="Navigation principale">
+        <nav class="nav-bar nav-bar--desktop">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="Logo de Booked">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
                 <span>Booked</span>
             </a>
             <ul class="nav-bar__pages">
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="./boutique.html">Boutique</a></li>
                 <li><a href="./evenement.html">Événements</a></li>
-                <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
             <ul class="nav-bar__actions">
-                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
+                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
             </ul>
         </nav>
 
-        <nav class="nav-bar nav-bar--mobile" aria-label="Navigation mobile">
+        <nav class="nav-bar nav-bar--mobile">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="Logo de Booked">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
                 <span>Booked</span>
             </a>
             <details class="nav-bar__menu">
                 <summary>
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-bars"></i>
                     <span class="visually-hidden">Menu de navigation</span>
                 </summary>
                 <div class="nav-bar__dropdown">
@@ -42,11 +43,11 @@
                         <li><a href="./index.html">Accueil</a></li>
                         <li><a href="./boutique.html">Boutique</a></li>
                         <li><a href="./evenement.html">Événements</a></li>
-                        <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                     <ul class="nav-bar__mobile-actions">
-                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
+                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                        <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
                     </ul>
                 </div>
             </details>
@@ -56,7 +57,7 @@
     <main>
         <section class="hero">
             <div class="hero__gauche">
-                <p class="hero__gauche__accroche">Des livre séléctionné avec amour</p>
+                <p class="hero__gauche__accroche">Des livres sélectionnés avec amour</p>
                 <h1 class="hero__gauche__titre">Bienvenue sur la<span>boutique de la librairie</span></h1>
                 <h3 class="hero__gauche__sous-titre">Romans, essais, littérature jeunesse, BD & Mangas, art & culture et de la poésie pour rassasier votre curiosité</h3>
                 <ul class="hero__gauche__buttons">
@@ -70,7 +71,7 @@
                     </li>
                     <li>
                         <span>4,7/5</span>
-                        <small>par 328 lecteur</small>
+                        <small>par 328 lecteurs</small>
                     </li>
                     <li>
                         <span>Depuis 2008</span>
@@ -82,7 +83,7 @@
                 <p class="hero__droite__location"><i class="fa-solid fa-location-dot"></i> 2 rue Chaudrier - 17000 La Rochelle</p>
                 <div>
                     <p class="hero__droite__nomSite">Booked</p>
-                    <p class="hero__droite__description">Une boutique au plus proche de chez vous, même que vous viviez loin</p>
+                    <p class="hero__droite__description">Une boutique au plus proche de chez vous, même si vous vivez loin</p>
                 </div>
             </div>
         </section>
@@ -90,48 +91,48 @@
         <section class="explorer" id="explorer">
             <p class="explorer__accroche">Explorer</p>
             <h2 class="explorer__titre">Une envie particulière ?</h2>
-            <form class="explorer__recherche" action="./boutique.html" method="get" role="search">
+            <form class="explorer__recherche" action="./boutique.html" method="get">
                 <label class="explorer__recherche__label" for="recherche-livre">Commencez vos recherches</label>
                 <input class="explorer__recherche__champ" id="recherche-livre" name="recherche" type="search" placeholder="Commencez vos recherches">
-                <button class="explorer__recherche__button" type="submit"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+                <button class="explorer__recherche__button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             <ul class="explorer__categories">
-                <li><a class="explorer__categorie explorer__categorie--tous" data-category="all">
-                    <i class="fa-solid fa-border-all" aria-hidden="true"></i>
+                <li><a class="explorer__categorie explorer__categorie--tous">
+                    <i class="fa-solid fa-border-all"></i>
                     <span>Tous</span>
                 </a></li>
-                <li><a class="explorer__categorie explorer__categorie--romans" data-category="roman">
-                    <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+                <li><a class="explorer__categorie explorer__categorie--romans">
+                    <i class="fa-regular fa-bookmark"></i>
                     <span>Romans</span>
                     <small>3 200 titres</small>
                 </a></li>
-                <li><a class="explorer__categorie explorer__categorie--essais" data-category="essai">
-                    <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
+                <li><a class="explorer__categorie explorer__categorie--essais">
+                    <i class="fa-regular fa-lightbulb"></i>
                     <span>Essais</span>
                     <small>1 860 titres</small>
                 </a></li>
-                <li><a class="explorer__categorie explorer__categorie--jeunesse" data-category="jeunesse">
-                    <i class="fa-solid fa-child-reaching" aria-hidden="true"></i>
+                <li><a class="explorer__categorie explorer__categorie--jeunesse">
+                    <i class="fa-solid fa-child-reaching"></i>
                     <span>Jeunesse</span>
                     <small>2 410 titres</small>
                 </a></li>
-                <li><a class="explorer__categorie explorer__categorie--bd" data-category="bd">
-                    <i class="fa-regular fa-image" aria-hidden="true"></i>
+                <li><a class="explorer__categorie explorer__categorie--bd">
+                    <i class="fa-regular fa-image"></i>
                     <span>BD & Manga</span>
                     <small>1 780 titres</small>
                 </a></li>
-                <li><a class="explorer__categorie explorer__categorie--culture" data-category="culture">
-                    <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                <li><a class="explorer__categorie explorer__categorie--culture">
+                    <i class="fa-solid fa-palette"></i>
                     <span>Arts & Culture</span>
                     <small>880 titres</small>
                 </a></li>
-                <li><a class="explorer__categorie explorer__categorie--poesie" data-category="poesie">
-                    <i class="fa-solid fa-feather" aria-hidden="true"></i>
+                <li><a class="explorer__categorie explorer__categorie--poesie">
+                    <i class="fa-solid fa-feather"></i>
                     <span>Poésie</span>
                     <small>580 titres</small>
                 </a></li>
-                <li><a class="explorer__categorie explorer__categorie--nouveautes" data-category="nouveaute">
-                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <li><a class="explorer__categorie explorer__categorie--nouveautes">
+                    <i class="fa-solid fa-star"></i>
                     <span>Nouveautés</span>
                     <small>74 titres</small>
                 </a></li>
@@ -143,82 +144,82 @@
             <h2 class="collection__titre">Tous les livres</h2>
             <p class="collection__description">Une nouvelle envie de lecture ? Trouvez ici votre prochain coup de cœur.</p>
             <ul class="collection__livres">
-                <li class="collection__livre" data-category="roman">
+                <li class="collection__livre">
                     <img class="collection__livre__couverture" src="/Images/Livres/la-tresse.jpg" alt="Couverture de La tresse">
                     <p class="collection__livre__categorie">Roman</p>
                     <span class="collection__livre__badge">Coup de cœur</span>
                     <h3 class="collection__livre__titre">La tresse</h3>
                     <p class="collection__livre__auteur">Emile Zola</p>
                     <p class="collection__livre__prix">25,90 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus"></i></button>
                 </li>
-                <li class="collection__livre" data-category="essai">
+                <li class="collection__livre">
                     <img class="collection__livre__couverture" src="/Images/Livres/pays-des-autres.jpg" alt="Couverture de Pays des autres">
                     <p class="collection__livre__categorie">Essai</p>
                     <h3 class="collection__livre__titre">Pays des autres</h3>
                     <p class="collection__livre__auteur">Patrik Sébastien</p>
                     <p class="collection__livre__prix">19,60 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus"></i></button>
                 </li>
-                <li class="collection__livre" data-category="bd">
+                <li class="collection__livre">
                     <img class="collection__livre__couverture" src="/Images/Livres/mordra-poussiere.jpg" alt="Couverture de Mordra poussière">
                     <p class="collection__livre__categorie">Bandes dessinées</p>
                     <h3 class="collection__livre__titre">Mordra poussière</h3>
                     <p class="collection__livre__auteur">Titeuf</p>
                     <p class="collection__livre__prix">15,90 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus"></i></button>
                 </li>
-                <li class="collection__livre" data-category="jeunesse">
+                <li class="collection__livre">
                     <img class="collection__livre__couverture" src="/Images/Livres/veiller-sur-elle.jpg" alt="Couverture de Veiller sur elle">
                     <p class="collection__livre__categorie">Jeunesse</p>
                     <h3 class="collection__livre__titre">Veiller sur elle</h3>
                     <p class="collection__livre__auteur">Misato Shinji</p>
                     <p class="collection__livre__prix">80,30 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus"></i></button>
                 </li>
-                <li class="collection__livre" data-category="roman nouveaute">
+                <li class="collection__livre">
                     <img class="collection__livre__couverture" src="/Images/Livres/zelda.jpg" alt="Couverture de Zelda">
                     <p class="collection__livre__categorie">Roman</p>
                     <span class="collection__livre__badge">Nouveau</span>
-                    <h3 class="collection__livre__titre">The Legende of Zelda :souvenirs d'enfance</h3>
+                    <h3 class="collection__livre__titre">The Legend of Zelda : souvenirs d'enfance</h3>
                     <p class="collection__livre__auteur">Matthieu Meriot</p>
                     <p class="collection__livre__prix">20,90 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus"></i></button>
                 </li>
-                <li class="collection__livre" data-category="roman nouveaute">
+                <li class="collection__livre">
                     <img class="collection__livre__couverture" src="/Images/Livres/La-nuit-des-lucioles.jpg" alt="Couverture de La nuit des lucioles">
                     <p class="collection__livre__categorie">Roman</p>
                     <span class="collection__livre__badge">Nouveau</span>
                     <h3 class="collection__livre__titre">La nuit des lucioles</h3>
                     <p class="collection__livre__auteur">Clara Brunet</p>
                     <p class="collection__livre__prix">21,90 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus"></i></button>
                 </li>
-                <li class="collection__livre" data-category="jeunesse">
+                <li class="collection__livre">
                     <img class="collection__livre__couverture" src="/Images/Livres/Cartographie-des-jours.jpg" alt="Couverture de Cartographie des jours">
                     <p class="collection__livre__categorie">Jeunesse</p>
                     <span class="collection__livre__badge">Coup de cœur</span>
                     <h3 class="collection__livre__titre">Cartographie des jours</h3>
                     <p class="collection__livre__auteur">Maël Dorsay</p>
                     <p class="collection__livre__prix">19,50 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus"></i></button>
                 </li>
-                <li class="collection__livre" data-category="essai nouveaute">
+                <li class="collection__livre">
                     <img class="collection__livre__couverture" src="/Images/Livres/le-goat.webp" alt="Couverture Journal d'un prisonnier">
                     <p class="collection__livre__categorie">Essai</p>
                     <span class="collection__livre__badge">Nouveau</span>
                     <h3 class="collection__livre__titre">Journal d'un prisonnier</h3>
                     <p class="collection__livre__auteur">Nicolas Sarkozy</p>
                     <p class="collection__livre__prix">20,90 €</p>
-                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    <button class="collection__livre__ajouter" type="button"><i class="fa-solid fa-plus"></i></button>
                 </li>
             </ul>
-            <button id="galleryMore" class="collection__voir-plus" type="button">Voir plus <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+            <button id="galleryMore" class="collection__voir-plus" type="button">Voir plus <i class="fa-solid fa-plus"></i></button>
         </section>
 
         <section class="retrait">
             <div class="retrait__presentation">
-                <p class="retrait__delai"><i class="fa-regular fa-clock" aria-hidden="true"></i> Prêt en 2 heures</p>
+                <p class="retrait__delai"><i class="fa-regular fa-clock"></i> Prêt en 2 heures</p>
                 <h2 class="retrait__titre">Réservez ici. Retirez gratuitement chez nous.</h2>
                 <p class="retrait__description">Le plaisir de commander facilement, le sourire de votre libraire en plus.</p>
             </div>
@@ -254,14 +255,14 @@
                 <p>Lun-Sam 10h-19h Dim 11h-18h</p>
                 
                 <ul class="footer__reseaux">
-                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
                 </ul>
             </section>
 
-            <nav class="footer__colonne footer__acces-rapides" aria-labelledby="f-rapide">
-                <h2 id="f-rapide">Accès rapides</h2>
+            <nav class="footer__colonne footer__acces-rapides">
+                <h2>Accès rapides</h2>
                 <ul>
                     <li><a href="./index.html">Accueil</a></li>
                     <li><a href="./boutique.html">Boutique</a></li>
@@ -270,8 +271,8 @@
                 </ul>
             </nav>
 
-            <nav class="footer__colonne" aria-labelledby="f-booked">
-                <h2 id="f-booked">Booked</h2>
+            <nav class="footer__colonne">
+                <h2>Booked</h2>
                 <ul>
                     <li><a href="#">Événements</a></li>
                     <li><a href="#">Notre équipe</a></li>
@@ -279,8 +280,8 @@
                 </ul>
             </nav>
 
-            <nav class="footer__colonne" aria-labelledby="f-aide">
-                <h2 id="f-aide">Besoin d'aide</h2>
+            <nav class="footer__colonne">
+                <h2>Besoin d'aide</h2>
                 <ul>
                     <li><a href="#">Commande(s)</a></li>
                     <li><a href="#">Retours</a></li>
@@ -290,7 +291,7 @@
 
             <div class="footer__bas">
                 <p><a href="#">Mentions légales</a> <a href="#">Confidentialité</a> <a href="#">CGV</a></p>
-                <p class="footer__paiements" aria-label="Moyens de paiement acceptés"><span>VISA</span><span>MC</span><span>PayPal</span></p>
+                <p class="footer__paiements"><span>VISA</span><span>MC</span><span>PayPal</span></p>
             </div>
         </div>
     </footer>

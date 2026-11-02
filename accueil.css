@@ -1,47 +1,778 @@
-
-h1{
+main h1{
     font-family: var(--font-serif);
     font-size:175%;
 }
 
-span{
-    color:var(--color-orange)
+main h2{
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    margin:0;
+    text-align: left;
 }
-/* Haut de la page (hors nav) */
-section{
-    margin: 0.5rem; /* Marge extérieure */
+
+main section{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    width: min(100%, 1440px);
+    margin: 40px auto;
     padding:1rem; /* Marge intérieure */
-    background-color: var(--color-jaune);
+    background-color: var(--color-creme);
     border-radius: 10px; /* Applique un effet d'arrondit */
 }
 
-
-.hero__droite{
-    display:none; /* Supprime de la mise en page*/
+main img{
+    width: 100%;
+    height: auto;
 }
 
-.hero__gauche__buttons{
-    margin-bottom: 1rem;
+.section-heading{
     display:flex;
-    gap:1em;    /* Ecart */
-    flex-direction: row; /* Blocs en ligne*/
-    flex-wrap: wrap; /* Retour à la ligne si plus de place */
-    justify-content: center; /* Garde les boutons au centre du bloc */
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1rem;
 }
 
-.hero__gauche__buttons li button{
-    padding-left:1rem;
-    padding-right:1rem;
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-    flex-basis:75%; /*taille minimum*/
-    flex-grow:1;
-    background-color: var(--color-rose); /*Couleur du bouton*/
-    border-radius:30px;
-    border-color:var(--color-texte);
+.section-heading__text{
+    min-width:0;
 }
 
-/* Mise en forme des autres parties */
+.goto{
+    flex:0 0 auto;
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 1px solid var(--color-texte);
+    background: var(--color-white);
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.goto:hover{
+    transform: translateY(-2px);
+}
+
+.over-title{
+    color: var(--color-orange);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.under-title{
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* --- Section Hero --- */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: min(100%, 1440px);
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.hero__gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero__gauche__accroche {
+    color: var(--color-orange);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero__gauche__titre {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.hero__gauche__titre span {
+    display: block;
+    color: var(--color-orange);
+}
+
+.hero__gauche__sous-titre {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-muted);
+}
+
+.hero__gauche__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 8px;
+    list-style: none;
+}
+
+.hero__gauche__buttons button {
+    padding: 12px 24px;
+    border-radius: 999px;
+    border: 1px solid var(--color-texte);
+    background: var(--color-white);
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.hero__gauche__buttons button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero__gauche__button--nouveaute {
+    background: var(--color-orange) !important;
+    border-color: var(--color-orange) !important;
+    color: var(--color-white);
+}
+
+.hero__gauche__buttons button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.hero__gauche__infos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 16px;
+    list-style: none;
+}
+
+.hero__gauche__infos li {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__gauche__infos span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-serif);
+}
+
+.hero__gauche__infos small {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+.hero__droite {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background: url('/Images/Boutique/home-boutique.jpg') center/cover no-repeat;
+    background-color: var(--color-text-muted); 
+    color: var(--color-white);
+}
+
+.hero__droite__location {
+    align-self: flex-start;
+    background: var(--color-white);
+    color: var(--color-texte);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.hero__droite div {
+    background: var(--color-white);
+    color: var(--color-texte);
+    padding: 16px;
+    border-radius: 12px;
+    max-width: 250px;
+}
+
+.hero__droite__nomSite {
+    font-size: 0.75rem;
+    color: var(--color-orange);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.hero__droite__description {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+/* ################ Partie nouveautés ################ */
+
 .Accueil__new-book{
-    background-color:var(--color-jaune) ;
+    background-color: var(--color-white);
 }
+
+.Accueil__new-book img{
+    height: 3rem;
+    width:3rem;
+}
+
+.book-list {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap:0rem;
+    justify-content: center;
+    min-width:20%;
+}
+
+.book-list ul {
+    max-width:80%;
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    /* 'safe center' garantit que si le contenu déborde, il s'aligne à gauche pour rester accessible */
+    justify-content: safe center; 
+    overflow-y: hidden; /* Empêche le défilement vertical */
+    overflow-x: scroll; /* Permet le défilement horizontal si nécessaire */
+}
+
+.book-list img{
+    margin-top:5rem;
+}
+
+.book{
+    position: relative;
+    border: 1px transparent black; /* Nécessaire pour avoir une image en background*/
+    height: 18rem;
+    min-width:9rem;
+    margin-bottom: 1rem; /*Empêche la barre de scroll de s'afficher sur les boutons*/
+}
+
+.cover{
+    border-radius: 5px;
+    height:12rem;
+}
+
+.book-description__title{
+    position:absolute;
+    bottom:3rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    text-align:flex-start;
+    font-size:1rem;
+    margin:auto;
+    padding-top:0.5rem;
+    max-width: 9rem;
+}
+
+.book-description__author{
+    position:absolute;
+    bottom:2rem;
+    font-size: 0.8rem;
+    color:var(--color-text-muted);
+    margin:auto;
+    padding:auto;
+}
+
+.book-description__price{
+    position:absolute;
+    bottom:0rem;
+    font-weight: 700; /* Permet de mettre le texte en gras */
+    margin:auto;
+    padding-bottom:0.5rem;
+}
+
+.book-description button{
+    position:absolute;
+    right:0.2rem;
+    bottom:0.2rem;
+    background-color: var(--color-orange);
+    border: 1px transparent var(--color-orange);
+    border-radius: 999px;
+    padding:0.4rem;
+    margin:auto;
+    margin-top:0.5rem;
+    cursor: pointer;
+}
+
+.book-description__button:hover{
+    transform: scale(1.1);
+}
+
+.book-description__button i{
+    color:var(--color-white);
+}
+
+.cover__book-type{
+    
+    position:absolute;
+    font-size: 0.8rem;
+    font-weight: 700;
+    left:0.2rem;
+    top:0px;
+}
+
+#book1 .cover{
+    background: url('/Images/Livres/La-nuit-des-lucioles.jpg') center/cover no-repeat;
+    color:var(--color-jaune)
+}
+
+#book2 .cover{
+    background: url('/Images/Livres/Cartographie-des-jours.jpg') center/cover no-repeat;
+    color:var(--color-vertf)
+}
+
+#book3 .cover{
+    background: url('/Images/Livres/Habiter-le-vivant.jpg') center/cover no-repeat;
+    color:black;
+}
+
+#book4 .cover{
+    background: url('../images/Livres/Le-bleu-entre-nous.jpg') center/cover no-repeat;
+    color:var(--color-jaune)
+}
+
+#book5 .cover{
+    background: url('../images/Livres/Petite-meterologie.jpg') center/cover no-repeat;
+    color:var(--color-orange)
+}
+
+/* ################ Partie Événements ################ */
+
+.Accueil__events{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: min(100%, 1440px);
+    margin: 40px auto;
+}
+
+.Accueil__events__elements{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.Accueil__events__left{
+    position: relative;
+    height:20rem;
+    width: min(100%, 1440px);
+    border-radius: 20px;
+    background: url('/Images/Accueil/Club-de-Littérature.jpg') center/cover no-repeat;
+}
+
+.Accueil__events__left__en-tête{
+    position:absolute;
+    
+    top:0.5rem;
+    left:1rem;
+
+    padding:0.2rem;
+    width: 20%;
+
+    font-size: 0.75rem;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-white);
+
+    border: 1px solid var(--color-orange);
+    border-radius: 999px;
+    
+    background-color: var(--color-orange);
+}
+
+.Accueil__events__left__description{
+    position:absolute;
+    bottom:0%;
+    right:1rem;
+
+    padding:0.5rem;
+    width: auto;
+
+    font-size: 1.25rem;
+    font-family: var(--font-serif);
+    text-align: center;
+    color: var(--color-white);
+
+    border: 1px transparent black;
+    border-radius: 999px;
+    
+    background-color: rgb(0,0,0,0.7);
+
+}
+
+.Accueil__events__right{
+    width: 100%;
+}
+
+.Accueil__events__right ul{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.Accueil__events__event{
+    display:flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    min-width: 30%;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.Accueil__events__event__date{
+    
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem;
+
+    border-radius: 20px;
+    background-color: var(--color-white);
+}
+
+.Accueil__events__event__date h6{
+    margin-top:1rem;
+    margin-bottom:0rem;
+
+    font-size: 2.5rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    text-align: center;
+}
+
+.Accueil__events__event__date p{
+    margin:auto;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    color:var(--color-orange);
+    text-align: center;
+}
+
+.Accueil__events__event__text{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Accueil__events__event__text p{
+    margin:0.2rem;
+
+    font-size: 0.5rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    color:var(--color-text-muted);
+    text-align: left;
+}
+
+.Accueil__events__event__text h6{
+    margin:0;
+    font-size: 1rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color:var(--color-texte);
+}
+
+.Accueil__events__event__button{
+    height: 20%;
+    width: 20%;
+
+    border-radius: 999px;
+    border: 1px transparent var(--color-orange);
+
+    padding: 0.5rem;
+    margin-top:2rem;
+    margin-right: 1rem;
+
+    color: var(--color-white);
+
+    background-color: var(--color-orange);
+
+    transition: all 0.2s ease;
+}
+
+.Accueil__events__event__button:hover{
+    transform: scale(1.1);
+}
+
+#event1 {
+    background-color: var(--color-rose);
+}
+
+#event2 {
+    background-color: var(--color-vert);
+}
+
+#event3 {
+    background-color: var(--color-jaune);
+}
+
+/* ################ Partie Équipe ################ */
+
+.Accueil__team{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: min(100%, 1440px);
+    margin: 40px auto;
+    background-color: var(--color-white); 
+}
+
+.Accueil__team__members ul{
+    display:flex;
+    flex-direction: row;
+    padding:1rem;
+    gap: 1rem;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--color-white);
+    overflow-y: hidden; /* Empêche le défilement vertical */
+    overflow-x: scroll;
+}
+
+.Accueil__team__member{
+    display:flex;
+    flex-direction: row;
+
+    height:15rem;
+    width:25rem;
+
+    border:1px transparent black;
+    border-radius: 20px 20px 20px 20px ;
+    
+}
+
+.Accueil__team__member img{
+    min-width: 40%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.Accueil__team__member__text{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+
+.Accueil__team__member__text h6{
+    margin:0.5rem;
+
+    font-size: 1.25rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+
+    color:var(--color-texte);
+}
+
+.Accueil__team__member__type{
+    margin:0.5rem;
+
+    font-size: 0.75rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+
+    color:var(--color-text-muted);
+}
+
+.Accueil__team__member__type{
+    margin:0.5rem;
+
+    font-size: 0.75rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+
+    color:var(--color-text-muted);
+}
+
+.Accueil__team__member__text__citation{
+    margin:0.75rem;
+
+    font-size: 1.2rem;
+    font-family: var(--font-serif);
+    font-weight: 400;
+
+    color:black;
+}
+
+#member1{
+    background-color: var(--color-rose);
+}
+
+#member2{
+    background-color: var(--color-vert);
+}
+
+#member3{
+    background-color: var(--color-jaune);
+}
+
+/* ################ Partie Avis ################ */
+
+.Accueil__reviews{
+    background-color: var(--color-creme);
+}
+
+.Accueil__reviews__review{
+    display:flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color: var(--color-white);
+    
+}
+
+.Accueil__reviews__boards ul{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    margin: 1rem;
+
+    border-radius: 20px;
+    overflow-x:scroll;
+}
+
+.review-text{
+    font-size: 0.9rem;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    color:var(--color-text);
+}
+
+.review-note{
+    color: var(--color-orange);
+}
+
+.Accueil__reviews__review-account{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    height: 100%;
+    min-height: 3rem;
+    width: 20rem;
+    background-color: var(--color-white);
+}
+
+.account-logo{
+    text-align: center;
+    align-content: center;
+
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 999px;
+
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+#user1 .account-logo{
+    background-color: var(--color-rose);
+}
+
+#user2 .account-logo{
+    background-color: var(--color-vert);
+}
+
+#user3 .account-logo{
+    background-color: var(--color-jaune);
+}
+
+/* --- Grand Desktop (>= 1100px) --- */
+@media (min-width: 1100px){
+
+    .section-heading{
+        flex-direction:row;
+        align-items:flex-end;
+        justify-content:space-between;
+    }
+
+    /* Partie Hero */
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 60px;
+        padding: 40px 75px;
+    }
+
+    .hero__gauche__titre {
+        font-size: 3.5rem;
+    }
+
+    .hero__gauche__sous-titre {
+        font-size: 1.15rem;
+        max-width: 80%;
+    }
+
+    .hero__droite {
+        min-height: 500px;
+        padding: 40px;
+    }
+
+    /* Partie nouveautées */
+    .book-list ul {
+        gap:3rem;
+        max-width:100%;
+    }
+
+    .book{
+        height: 21rem;
+        min-width: 12rem;
+    }
+
+    .Accueil__new-book img{
+        display:none;
+    }
+
+    .cover{
+        height:15rem;
+    }
+
+    /* Partie événements */
+    .Accueil__events__elements{
+        display:flex;
+        flex-direction: row;
+        gap:1rem;
+        justify-content: center;
+    }
+
+    .Accueil__events__left{
+        height:auto;
+        width: 40%;
+        border-radius: 20px;
+        background: url('/Images/Accueil/Club-de-Littérature.jpg') center/cover no-repeat;
+    }
+
+    .Accueil__events__event{
+        height: auto;
+        width: 100%;
+    }
+
+    /* Partie équipe */
+    .Accueil__team__members ul{
+        gap: 2rem;
+        justify-content: center;
+    }
+}
+
+    

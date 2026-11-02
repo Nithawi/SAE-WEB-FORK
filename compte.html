@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/compte.css">
+    <link rel="icon" href="/Images/Autre/logo.png"/>
+    <title>Booked | Mon compte</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar nav-bar--desktop">
+            <a class="logo" href="./index.html">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
+                <span>Booked</span>
+            </a>
+            <ul class="nav-bar__pages">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./boutique.html">Boutique</a></li>
+                <li><a href="./evenement.html">Événements</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav-bar__actions">
+                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-bar nav-bar--mobile">
+            <a class="logo" href="./index.html">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
+                <span>Booked</span>
+            </a>
+            <details class="nav-bar__menu">
+                <summary>
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="visually-hidden">Menu de navigation</span>
+                </summary>
+                <div class="nav-bar__dropdown">
+                    <ul class="nav-bar__pages">
+                        <li><a href="./index.html">Accueil</a></li>
+                        <li><a href="./boutique.html">Boutique</a></li>
+                        <li><a href="./evenement.html">Événements</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav-bar__mobile-actions">
+                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                        <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
+                    </ul>
+                </div>
+            </details>
+        </nav>
+    </header>
+
+    <main>
+        <section class="compte">
+            <h1 class="compte__titre">Mon compte</h1>
+
+            <div class="compte__contenu">
+                
+                <div class="compte__section">
+                    <h2 class="compte__sous-titre">Mes informations</h2>
+                    <div class="carte-info">
+                        <p class="carte-info__ligne"><span>Nom :</span> Michel Dupuit</p>
+                        <p class="carte-info__ligne"><span>Email :</span> michel.dupuit@example.com</p>
+                        <p class="carte-info__ligne"><span>Mot de passe :</span> ••••••••</p>
+                        <p class="carte-info__ligne"><span>Adresse :</span> 54 rue de la République, 17000 La Rochelle</p>
+                        <button type="button" class="carte-info__bouton">Modifier mes informations</button>
+                    </div>
+                </div>
+
+                <div class="compte__colonne-droite">
+                    
+                    <div class="compte__section">
+                        <h2 class="compte__sous-titre">Historique des commandes</h2>
+                        <ul class="compte__commandes-liste">
+                            <li class="carte-commande">
+                                <div class="carte-commande__entete">
+                                    <span class="carte-commande__numero">Commande #1042</span>
+                                    <span class="carte-commande__date">12 octobre 2026</span>
+                                </div>
+                                <p class="carte-commande__details">Articles : La tresse, Pays des autres</p>
+                                <div class="carte-commande__footer">
+                                    <span class="carte-commande__statut carte-commande__statut--domicile">Livraison à domicile</span>
+                                    <span class="carte-commande__prix">45,50 €</span>
+                                </div>
+                            </li>
+                            <li class="carte-commande">
+                                <div class="carte-commande__entete">
+                                    <span class="carte-commande__numero">Commande #1018</span>
+                                    <span class="carte-commande__date">3 septembre 2026</span>
+                                </div>
+                                <p class="carte-commande__details">Articles : Mordra poussière</p>
+                                <div class="carte-commande__footer">
+                                    <span class="carte-commande__statut carte-commande__statut--boutique">Retiré en boutique</span>
+                                    <span class="carte-commande__prix">15,90 €</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="compte__section">
+                        <h2 class="compte__sous-titre">Ma liste d'envies</h2>
+                        <ul class="compte__envies-liste">
+                            <li class="carte-envie">
+                                <img src="/Images/Livres/La-nuit-des-lucioles.jpg" alt="Couverture de La nuit des lucioles">
+                                <div class="carte-envie__infos">
+                                    <h3 class="carte-envie__titre">La nuit des lucioles</h3>
+                                    <p class="carte-envie__auteur">Clara Brunet</p>
+                                    <p class="carte-envie__prix">21,90 €</p>
+                                </div>
+                                <button type="button" class="carte-envie__ajouter">Ajouter au panier</button>
+                            </li>
+                            <li class="carte-envie">
+                                <img src="/Images/Livres/Le-bleu-entre-nous.jpg" alt="Couverture de Le bleu entre nous">
+                                <div class="carte-envie__infos">
+                                    <h3 class="carte-envie__titre">Le bleu entre nous</h3>
+                                    <p class="carte-envie__auteur">Inès Mori</p>
+                                    <p class="carte-envie__prix">18,90 €</p>
+                                </div>
+                                <button type="button" class="carte-envie__ajouter">Ajouter au panier</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__contenu">
+            <section class="footer__marque">
+                <a class="logo" href="/Accueil/index.html">
+                    <img src="./images/logo.png" alt="Logo de Booked">
+                    <span>Booked</span>
+                </a>
+                <p class="footer__slogan">Une librairie indépendante, joyeuse et curieuse, au cœur de la ville depuis 2008</p>
+                <p>2 rue Chaudrier 17000 La Rochelle</p>
+                <p>Lun-Sam 10h-19h Dim 11h-18h</p>
+                
+                <ul class="footer__reseaux">
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </section>
+
+            <nav class="footer__colonne footer__acces-rapides">
+                <h2>Accès rapides</h2>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./boutique.html">Boutique</a></li>
+                    <li><a href="./evenement.html">Événements</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer__colonne">
+                <h2>Booked</h2>
+                <ul>
+                    <li><a href="#">Événements</a></li>
+                    <li><a href="#">Notre équipe</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer__colonne">
+                <h2>Besoin d'aide</h2>
+                <ul>
+                    <li><a href="#">Commande(s)</a></li>
+                    <li><a href="#">Retours</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__bas">
+                <p><a href="#">Mentions légales</a> <a href="#">Confidentialité</a> <a href="#">CGV</a></p>
+                <p class="footer__paiements"><span>VISA</span><span>MC</span><span>PayPal</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

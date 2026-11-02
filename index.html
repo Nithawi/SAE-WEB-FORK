@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Liens permettant d'utiliser les icones de Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./accueil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/CSS/global.css">
+    <link rel="stylesheet" href="/CSS/accueil.css">
+    <link rel="icon" href="/Images/Autre/logo.png"/>
     <title>Booked | Accueil</title>
 </head>
 <body>
-    <!--Commentaire-->
     <header>
-        <nav class="nav-bar nav-bar--desktop" aria-label="Navigation principale">
+        <nav class="nav-bar nav-bar--desktop">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="Logo de Booked">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
                 <span>Booked</span>
             </a>
             <ul class="nav-bar__pages">
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="./boutique.html">Boutique</a></li>
                 <li><a href="./evenement.html">Événements</a></li>
-                <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
             <ul class="nav-bar__actions">
-                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Compte</a></li>
+                <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
             </ul>
         </nav>
 
-        <nav class="nav-bar nav-bar--mobile" aria-label="Navigation mobile">
+        <nav class="nav-bar nav-bar--mobile">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="Logo de Booked">
+                <img src="/Images/Autre/logo.png" alt="Logo de Booked">
                 <span>Booked</span>
             </a>
             <details class="nav-bar__menu">
                 <summary>
-                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    <i class="fa-solid fa-bars"></i>
                     <span class="visually-hidden">Menu de navigation</span>
                 </summary>
                 <div class="nav-bar__dropdown">
@@ -44,11 +43,11 @@
                         <li><a href="./index.html">Accueil</a></li>
                         <li><a href="./boutique.html">Boutique</a></li>
                         <li><a href="./evenement.html">Événements</a></li>
-                        <li><a href="./contact.html" aria-current="page">Contact</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                     <ul class="nav-bar__mobile-actions">
-                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>Mon panier</a></li>
-                        <li><a href="./compte.html"><i class="fa-solid fa-user" aria-hidden="true"></i>Mon compte</a></li>
+                        <li><a href="./panier.html"><i class="fa-solid fa-cart-shopping"></i>Mon panier</a></li>
+                        <li><a href="./compte.html"><i class="fa-solid fa-user"></i>Compte</a></li>
                     </ul>
                 </div>
             </details>
@@ -67,13 +66,13 @@
                     <li><button class="hero__gauche__button--maps" type="button"><a href="https://www.google.com/maps/place/2+Rue+Chaudrier,+17000+La+Rochelle">Venir à la librairie</a></button></li>
                 </ul>
                 <ul class="hero__gauche__infos">
-                    </li>
+                    <li>
                         <span>8000+</span>
                         <small>livres en stock</small>
                     </li>
                     <li>
                         <span>4,7/5</span>
-                        <small>par 328 lecteur</small>
+                        <small>par 328 lecteurs</small>
                     </li>
                     <li>
                         <span>Depuis 2008</span>
@@ -90,144 +89,187 @@
             </div>
         </section>
         <section class="Accueil__new-book">
-            <p class="over-title">TOUT JUSTE ARRIVÉS</p>
-            <h2>Les nouveautés à ne pas manquer</h2>
-            <p class="under-title">La rentrée littéraire et quelques futures favoris, récemment déballées par notre équipe</p>
-            <button class="goto" type="button">Toutes les nouveautés</button>
+            <div class="section-heading">
+                <div class="section-heading__text">
+                    <p class="over-title">TOUT JUSTE ARRIVÉS</p>
+                    <h2>Les nouveautés à ne pas manquer</h2>
+                    <p class="under-title">La rentrée littéraire et quelques futurs favoris, récemment déballés par notre équipe</p>
+                </div>
+                <button class="goto" type="button"><a href="./boutique.html">Toutes les nouveautés <i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
             <div class="book-list">
+                <img src="/Images/Autre/angle-de-la-fleche-gauche.png" alt="go-to-left">
                 <ul>
-                    <li class="book">
-                        <div class="cover1">
-                            <p>ROMAN</p>
-                            <h5>La nuit des lucioles</h5>
-                            <p>Clara Brunet</p>
+                    <li class="book" id="book1">
+                        <div class="cover">
+                            <p class="cover__book-type">ROMAN</p>
+                        </div>
+                        <div class="book-description">
+                            <h6 class="book-description__title">La nuit des lucioles</h6>
+                            <p class="book-description__author">Clara Brunet</p>
+                            <p class="book-description__price">21.90€</p>
+                            <button class="book-description__button" type="button"><i class="fa-solid fa-plus"></i></button>
                         </div>
                     </li>
-                    <li class="book">
-                        <div class="cover2">
-                            <p>JEUNESSE</p>
-                            <h5>Cartographie des jours</h5>
-                            <p>Maël Dorsay</p>
+                    <li class="book" id="book2">
+                        <div class="cover">
+                            <p class="cover__book-type">JEUNESSE</p>
+                        </div>
+                        <div class="book-description">
+                            <h6 class="book-description__title">Cartographie des jours</h6>
+                            <p class="book-description__author">Maël Dorsay</p>
+                            <p class="book-description__price">19.50€</p>
+                            <button class="book-description__button" type="button"><i class="fa-solid fa-plus"></i></button>
                         </div>
                     </li>
-                    <li class="book">
-                        <div class="cover3">
-                            <p>ESSAI</p>
-                            <h5>Habiter le vivant</h5>
-                            <p>Nora Benalli</p>
+                    <li class="book" id="book3">
+                        <div class="cover">
+                            <p class="cover__book-type">ESSAI</p>
+                        </div>
+                        <div class="book-description">
+                            <h6 class="book-description__title">Habiter le vivant</h6>
+                            <p class="book-description__author">Nora Benalli</p>
+                            <p class="book-description__price">23.00€</p>
+                            <button class="book-description__button" type="button"><i class="fa-solid fa-plus"></i></button>
                         </div>
                     </li>
-                    <li class="book">
-                        <div class="cover4">
-                            <p>ROMAN</p>
-                            <h5>Le bleu entre nous</h5>
-                            <p>Inès Mori</p>
+                    <li class="book" id="book4">
+                        <div class="cover">
+                            <p class="cover__book-type">ROMAN</p>
+                        </div>
+                        <div class="book-description">
+                            <h6 class="book-description__title">Le bleu entre nous</h6>
+                            <p class="book-description__author">Inès Mori</p>
+                            <p class="book-description__price">18.90€</p>
+                            <button class="book-description__button" type="button"><i class="fa-solid fa-plus"></i></button>
                         </div>
                     </li>
-                    <li class="book">
-                        <div class="cover5">
-                            <p>POÉSIE</p>
-                            <h5>Petites métérologies</h5>
-                            <p>Émile Sorel</p>
+                    <li class="book" id="book5">
+                        <div class="cover">
+                            <p class="cover__book-type">POÉSIE</p>
+                        </div>
+                        <div class="book-description">
+                            <h6 class="book-description__title">Petites métérologies</h6>
+                            <p class="book-description__author">Émile Sorel</p>
+                            <p class="book-description__price">16.00€</p>
+                            <button class="book-description__button" type="button"><i class="fa-solid fa-plus"></i></button>
                         </div>
                     </li>
                 </ul>
+                <img src="/Images/Autre/angle-de-la-fleche-droite.png" alt="go-to-right">
             </div>
         </section>
         <section class="Accueil__events">
-            <p class="over-title">A L'AGENDA</p>
-            <h2>La librairie est aussi un lieu de rencontres</h2>
-            <p class="under-title">Auteurs, ateliers, clubs de lecture : venez faire vivre les histoires avec nous</p>
-            <button class="goto" type="button">Tout les événements</button>
-            <div class="Accueil__events__right">
-                <ul>
-                    <li>
-                        <div class="Accueil__events__event">
-                            <div class="Accueil__events__event__date">
-                                <h6>08</h6>
-                                <p>OCT</p>
-                            </div>
-                            <div class="Accueil__events__event__text">
-                                <p>RENCONTRE</p>
-                                <h6>Rencontre avec Alice Zeniter</h6>
-                                <p>19h00-1h30</p>
-                                <p>Libre accès</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Accueil__events__event">
-                            <div class="Accueil__events__event__date">
-                                <h6>15</h6>
-                                <p>OCT</p>
-                            </div>
-                            <div class="Accueil__events__event__text">
-                                <p>CLUB BOOKED</p>
-                                <h6>Club de lecture - nos vis minuscules</h6>
-                                <p>18h30</p>
-                                <p>Gratuit</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="Accueil__events__event">
-                            <div class="Accueil__events__event__date">
-                                <h6>22</h6>
-                                <p>OCT</p>
-                            </div>
-                            <div class="Accueil__events__event__text">
-                                <p>JEUNESSE</p>
-                                <h6>Atelier illustration pour les 7-10 ans</h6>
-                                <p>15h00</p>
-                                <p>Sur inscription</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="section-heading">
+                <div class="section-heading__text">
+                    <p class="over-title">A L'AGENDA</p>
+                    <h2>La librairie est aussi un lieu de rencontres</h2>
+                    <p class="under-title">Auteurs, ateliers, clubs de lecture : venez faire vivre les histoires avec nous</p>
+                </div>
+                <button class="goto" type="button"><a href="/HTML/evenement.html">Tous les événements<i class="fa-solid fa-arrow-right"></i></a></button>
             </div>
-
+            <div class="Accueil__events__elements">
+                <div class="Accueil__events__left">
+                    <p class="Accueil__events__left__en-tête">EN BOUTIQUE</p>
+                    <p class="Accueil__events__left__description">Des rencontre au dela de la simple lecture</p>
+                </div>
+                <div class="Accueil__events__right">
+                    <ul>
+                        <li>
+                            <div class="Accueil__events__event" id="event1">
+                                <div class="Accueil__events__event__date">
+                                    <h6>08</h6>
+                                    <p>OCT</p>
+                                </div>
+                                <div class="Accueil__events__event__text">
+                                    <p>RENCONTRE</p>
+                                    <h6>Rencontre avec Alice Zeniter</h6>
+                                    <p>19h00-21h30</p>
+                                    <p>Libre accès</p>
+                                </div>
+                                <button class="Accueil__events__event__button" type="button"><a href="/HTML/evenement.html">En savoir plus</a></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Accueil__events__event" id="event2">
+                                <div class="Accueil__events__event__date">
+                                    <h6>15</h6>
+                                    <p>OCT</p>
+                                </div>
+                                <div class="Accueil__events__event__text">
+                                    <p>CLUB BOOKED</p>
+                                    <h6>Club de lecture - nos vies minuscules</h6>
+                                    <p>18h30</p>
+                                    <p>Gratuit</p>
+                                </div>
+                                <button class="Accueil__events__event__button" type="button"><a href="/HTML/evenement.html">En savoir plus</a></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="Accueil__events__event" id="event3">
+                                <div class="Accueil__events__event__date">
+                                    <h6>22</h6>
+                                    <p>OCT</p>
+                                </div>
+                                <div class="Accueil__events__event__text">
+                                    <p>JEUNESSE</p>
+                                    <h6>Atelier illustration pour les 7-10 ans</h6>
+                                    <p>15h00</p>
+                                    <p>Sur inscription</p>
+                                </div>
+                                <button class="Accueil__events__event__button" type="button"><a href="/HTML/evenement.html">En savoir plus</a></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="Accueil__team">
-            <p class="over-title">Une équipe en or</p>
-            <h2>Notre Équipe</h2>
-            <p class="under-title">Découvrer notre équipe de passionné toujours a votre écoute</p>
-            <button class="goto" type="button"">Nous contacter</button>
+            <div class="section-heading">
+                <div class="section-heading__text">
+                    <p class="over-title">Une équipe en or</p>
+                    <h2>Notre Équipe</h2>
+                    <p class="under-title">Découvrez notre équipe de passionnés toujours à votre écoute</p>
+                </div>
+                <button class="goto" type="button">Nous contacter</button>
+            </div>
             <div class="Accueil__team__members">
                 <ul>
                     <li>
-                        <div class="Accueil__team__member">
-                            <img src="./images/Equipe/Aaron.jpg">
+                        <div class="Accueil__team__member" id="member1">
+                            <img src="/Images/Equipe/Aaron.jpg" alt="Aaron">
                             <div class="Accueil__team__member__text">
                                 <h6>Aaron</h6>
-                                <p>Jeunesse & illustration</p>
-                                <p>
-                                    Un libraire passioné qui sera vous conseiller dans de nombreux
-                                    domain, specialiste de la littérature jeunesse.
+                                <p class="Accueil__team__member__type">Jeunesse & illustration</p>
+                                <p class="Accueil__team__member__text__citation">
+                                    "Un libraire passionné qui saura vous conseiller dans de nombreux
+                                    domaines, spécialiste de la littérature jeunesse."
                                 </p>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="Accueil__team__member">
-                            <img src="./images/Equipe/Thomas.jpg">
+                        <div class="Accueil__team__member" id="member2">
+                            <img src="/Images/Equipe/Thomas.jpg" alt="Thomas">
                             <div class="Accueil__team__member__text">
                                 <h6>Thomas</h6>
-                                <p>Essais & sciences humaines</p>
-                                <p>
-                                    Intelligent sans être intimidant : un regard neuf sur nos rues et
-                                    notre manière d'y vivre ensemble
+                                <p class="Accueil__team__member__type">Essais & sciences humaines</p>
+                                <p class="Accueil__team__member__text__citation">
+                                    "Intelligent sans être intimidant : un regard neuf sur nos rues et
+                                    notre manière d'y vivre ensemble"
                                 </p>
                             </div>
                         </div>
                     </li>
-                    <li><div class="Accueil__team__member">
-                            <img src="./images/Equipe/Jeanne.jpg">
+                    <li>
+                        <div class="Accueil__team__member" id="member3">
+                            <img src="/Images/Equipe/Jeanne.jpg" alt="Jeanne">
                             <div class="Accueil__team__member__text">
                                 <h6>Jeanne</h6>
-                                <p>Romans & poésie</p>
-                                <p>
-                                    S'ouvrir à la litterature c'est comme se jeter dans
-                                    l'immensité de la mer avec les poissons
+                                <p class="Accueil__team__member__type">Romans & poésie</p>
+                                <p class="Accueil__team__member__text__citation">
+                                    "S'ouvrir à la littérature c'est comme se jeter dans
+                                    l'immensité de la mer avec les poissons"
                                 </p>
                             </div>
                         </div>
@@ -236,51 +278,50 @@
             </div>
         </section>
         <section class="Accueil__reviews">
-            <p>VOS MOTS DOUX</p>
+            <p class="over-title">VOS MOTS DOUX</p>
             <h2>Le quartier parle de nous</h2>
             <div class="Accueil__reviews__boards">
                 <ul>
                     <li>
                         <div class="Accueil__reviews__review">
-                            <p class="review-note">*****</p>
+                            <p class="review-note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                             <p class="review-text">
                             Je viens pour un titre, je repars toujours avec une surprise
                             et une recommandation parfaite
                             </p>
-                            <div class="Accueil__reviews__review_account">
-                                <img src="#" alt="profil_picture">
+                            <div class="Accueil__reviews__review-account" id="user1">
+                                <p class="account-logo">SM</p>
                                 <p class="account-name">Sarah M.</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="Accueil__reviews__review">
-                            <p class="review-note">****</p>
+                            <p class="review-note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                             <p class="review-text">
                             Le retrait est super simple, mais je reste quand même vingt minutes
                             à discuter avec l'équipe
                             </p>
-                            <div class="Accueil__reviews__review_account">
-                                <img src="#" alt="profil_picture">
+                            <div class="Accueil__reviews__review-account" id="user2">
+                                <p class="account-logo">TR</p>
                                 <p class="account-name">Timéo R.</p>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="Accueil__reviews__review">
-                            <p class="review-note">*****</p>
+                            <p class="review-note"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                             <p class="review-text">
                             Le rayon jeunesse est une merveille. Mes enfants demandent maintenant
                             à revenir
                             </p>
-                            <div class="Accueil__reviews__review_account">
-                                <img src="#" alt="profil_picture">
+                            <div class="Accueil__reviews__review-account" id="user3">
+                                <p class="account-logo">EC</p>
                                 <p class="account-name">Élodie C.</p>
                             </div>
                         </div>
                     </li>
                 </ul>
-
             </div>
         </section>
     </main>
@@ -296,14 +337,14 @@
                 <p>Lun-Sam 10h-19h Dim 11h-18h</p>
                 
                 <ul class="footer__reseaux">
-                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a></li>
                 </ul>
             </section>
 
-            <nav class="footer__colonne footer__acces-rapides" aria-labelledby="f-rapide">
-                <h2 id="f-rapide">Accès rapides</h2>
+            <nav class="footer__colonne footer__acces-rapides">
+                <h2>Accès rapides</h2>
                 <ul>
                     <li><a href="./index.html">Accueil</a></li>
                     <li><a href="./boutique.html">Boutique</a></li>
@@ -312,8 +353,8 @@
                 </ul>
             </nav>
 
-            <nav class="footer__colonne" aria-labelledby="f-booked">
-                <h2 id="f-booked">Booked</h2>
+            <nav class="footer__colonne">
+                <h2>Booked</h2>
                 <ul>
                     <li><a href="#">Événements</a></li>
                     <li><a href="#">Notre équipe</a></li>
@@ -321,8 +362,8 @@
                 </ul>
             </nav>
 
-            <nav class="footer__colonne" aria-labelledby="f-aide">
-                <h2 id="f-aide">Besoin d'aide</h2>
+            <nav class="footer__colonne">
+                <h2>Besoin d'aide</h2>
                 <ul>
                     <li><a href="#">Commande(s)</a></li>
                     <li><a href="#">Retours</a></li>
@@ -332,7 +373,7 @@
 
             <div class="footer__bas">
                 <p><a href="#">Mentions légales</a> <a href="#">Confidentialité</a> <a href="#">CGV</a></p>
-                <p class="footer__paiements" aria-label="Moyens de paiement acceptés"><span>VISA</span><span>MC</span><span>PayPal</span></p>
+                <p class="footer__paiements"><span>VISA</span><span>MC</span><span>PayPal</span></p>
             </div>
         </div>
     </footer>
