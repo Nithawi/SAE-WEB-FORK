@@ -443,6 +443,7 @@ main section {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    border-radius: 0px;
 }
 
 .retrait__presentation {
