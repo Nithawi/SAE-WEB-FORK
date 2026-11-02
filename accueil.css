@@ -729,10 +729,22 @@ main img{
         padding: 40px;
     }
 
+    /* Partie nouveautés */
+    .Accueil__new-book{
+        overflow-x: hidden;
+    }
+
+
     /* Partie nouveautées */
     .book-list ul {
         gap:3rem;
         max-width:100%;
+        scrollbar-width:none;
+        -ms-overflow-style:none;
+    }
+
+    .book-list ul::-webkit-scrollbar {
+        display:none;
     }
 
     .book{
@@ -772,6 +784,21 @@ main img{
     .Accueil__team__members ul{
         gap: 2rem;
         justify-content: center;
+        scrollbar-width:none;
+        -ms-overflow-style:none;
+    }
+
+    .Accueil__team__members ul::-webkit-scrollbar {
+        display:none;
+    }
+
+    .Accueil__reviews__boards ul{
+        scrollbar-width:none;
+        -ms-overflow-style:none;
+    }
+
+    .Accueil__reviews__boards ul::-webkit-scrollbar {
+        display:none;
     }
 }
 
